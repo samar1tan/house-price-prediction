@@ -1,9 +1,9 @@
+from bgd import bgd
 import csv
 from functools import reduce
 from lsm import lsm
 import matplotlib.pyplot as plt
 import numpy as np
-from sgd import bgd
 from sys import stderr
 import time
 
