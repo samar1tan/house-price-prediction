@@ -27,3 +27,18 @@ Predict second-hand housing prices in Shenyang, China, based on [链家](https:/
 
 **Fully-connected NN (1-layered)**
 
+## Usage
+1. run crawler
+    - `cd housing_spider`
+    - `scrapy crawl houses_info`
+    - the crawled data would be stored in `houses_info.csv` in project root
+2. run linear regression / deep learning: `python run_lr.py` / `python run_dl.py`
+    - optimizers (LSM / BGD) can be chosen in `run_lr.py`
+
+## Dependencies
+- Python 3.x
+- Scrapy
+- TensorFlow 1.x
+- Keras
+- NumPy
+- matplotlib
