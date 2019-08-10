@@ -1,6 +1,6 @@
-import numpy as np
 from sys import stderr
 
+import numpy as np
 
 # Hyperparams
 LEARNING_RATE_MIN = 0.000000000001
@@ -31,13 +31,13 @@ def bgd(X_train, Y_train):
                 loss = Y_pred - Y_train
                 cost = np.sum(loss ** 2) / len(X_train)
 
-                if not i % PRINT_INTERVAL:
-                    print('Iteration {0}: cost={1:.2f}'.format(i, cost))
-
                 if not (i + 1) % LEARNING_RATE_UP_INTERVAL:
                     lr = min(LEARNING_RATE_MAX, lr * 1.01)
                     if lr != LEARNING_RATE_MAX:
                         print('speed up: lr={0}'.format(lr), file=stderr)
+
+                if not i % PRINT_INTERVAL:
+                    print('Iteration {0}: cost={1:.2f}'.format(i, cost))
 
                 if cost <= TARGET_COST:  # or until MAX_ITERATIONS end
                     break
