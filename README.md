@@ -27,6 +27,9 @@ Predict second-hand housing prices in Shenyang, China, based on [链家](https:/
 
 **Fully-connected NN (1-layered)**
 
+
+
+*TBD*
 ## Usage
 1. **run crawler**
     - `cd housing_spider`
@@ -43,3 +46,6 @@ Predict second-hand housing prices in Shenyang, China, based on [链家](https:/
 - Keras
 - NumPy
 - matplotlib
+
+## References
+- [Regression Tutorial with the Keras Deep Learning Library in Python](https://machinelearningmastery.com/regression-tutorial-keras-deep-learning-library-python/)
