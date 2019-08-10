@@ -1,17 +1,19 @@
-from bgd import bgd
 import csv
+import time
 from functools import reduce
-from lsm import lsm
+from sys import stderr
+
 import matplotlib.pyplot as plt
 import numpy as np
-from sys import stderr
-import time
 
+from bgd import bgd
+from lsm import lsm
 
 # Env Settings
 CSV_FILE_NAME = 'houses_info.csv'
 NUM_ITEMS = 2998
 NUM_TESTING_ITEMS = int(NUM_ITEMS * 0.3)
+NUM_FEATURES = 19
 
 
 def csv2dataset(csv_file, num_test):
